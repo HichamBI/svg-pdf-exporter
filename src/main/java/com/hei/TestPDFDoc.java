@@ -21,8 +21,8 @@ public class TestPDFDoc {
     public static void main(String... arg) throws IOException, DocumentException, TranscoderException {
         PDFDoc pdfDoc = new PDFDoc(600f, 588f);
 
-        Font fontBold = new Font("Verdana", Font.BOLD, 13);
-        Font fontNormal = new Font("Verdana", Font.PLAIN, 13);
+        Font fontBold = new Font("Arial", Font.BOLD, 13);
+        Font fontNormal = new Font("Arial", Font.PLAIN, 13);
 
         pdfDoc.addTextLine("Entity", fontBold, 15, 40);
         pdfDoc.addTextLine("Benchmark : MCI Euro", fontNormal, 15, 53);
@@ -32,11 +32,11 @@ public class TestPDFDoc {
         pdfDoc.addTextLine("Benchmark Type : Master Configuration", fontNormal, 15, 105);
         pdfDoc.addTextLine("Currency : EUR", fontNormal, 15, 118);
 
-        File file = new File("graph.svg");
+        File file = new File("gradient.svg");
         pdfDoc.addSvgImage(file, 0, 131);
 
         ByteArrayOutputStream pdfPageStream = pdfDoc.getPDFStream();
-        File temp = new File("result.pdf");
+        File temp = new File("result1.pdf");
 
         try(FileOutputStream fileOut = new FileOutputStream(temp)) {
             fileOut.write(pdfPageStream.toByteArray());

@@ -4,6 +4,7 @@ import org.apache.batik.bridge.*;
 import org.apache.batik.dom.GenericDOMImplementation;
 import org.apache.batik.dom.svg.SAXSVGDocumentFactory;
 import org.apache.batik.gvt.GraphicsNode;
+import org.apache.batik.svggen.SVGGeneratorContext;
 import org.apache.batik.svggen.SVGGraphics2D;
 import org.apache.batik.transcoder.SVGAbstractTranscoder;
 import org.apache.batik.transcoder.TranscoderException;
@@ -76,7 +77,13 @@ public class PDFDoc {
         Document document = domImpl.createDocument(svgNamespaceURI, "svg", null);
 
         // Create an instance of the SVG Generator
-        svgGraphics2D = new SVGGraphics2D(document);
+//        svgGraphics2D = new SVGGraphics2D(document);
+
+        SVGGeneratorContext sVGGeneratorContext = SVGGeneratorContext.createDefault(document);
+        sVGGeneratorContext.setExtensionHandler(new GradientExtensionHandler());
+        svgGraphics2D  = new SVGGraphics2D(sVGGeneratorContext, false);
+
+
         svgGraphics2D.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
 
         String parser = XMLResourceDescriptor.getXMLParserClassName();

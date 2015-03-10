@@ -13,8 +13,8 @@ import java.io.IOException;
 
 public class TestExporter {
 
-    public static final String SVG_FILE_PATH = "graph.svg";
-    public static final String RESULT = "result.pdf";
+    public static final String SVG_FILE_PATH = "gradient.svg";
+    public static final String RESULT = "result1.pdf";
 
     public static void main(String ... arg) throws IOException, DocumentException, TranscoderException {
         ItextExporter exporter = new ItextExporter();
