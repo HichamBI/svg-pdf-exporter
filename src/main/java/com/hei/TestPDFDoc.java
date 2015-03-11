@@ -36,7 +36,7 @@ public class TestPDFDoc {
         pdfDoc.addSvgImage(file, 0, 131);
 
         ByteArrayOutputStream pdfPageStream = pdfDoc.getPDFStream();
-        File temp = new File("result1.pdf");
+        File temp = new File("result.pdf");
 
         try(FileOutputStream fileOut = new FileOutputStream(temp)) {
             fileOut.write(pdfPageStream.toByteArray());
