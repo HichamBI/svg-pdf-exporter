@@ -1,4 +1,4 @@
-package com.hei.com.bisam;
+package exporter;
 
 import org.apache.batik.bridge.*;
 import org.apache.batik.dom.GenericDOMImplementation;
@@ -84,10 +84,6 @@ public class PDFDocument {
         svgGraphics2D.getTransform();
         String svg = new String(outputStream.toByteArray(), "UTF-8");
         return transcodeToPDFStream(svg);
-    }
-
-    public FontMetrics getFontMetrics() {
-        return svgGraphics2D.getFontMetrics();
     }
 
     private void initializeDocument() {

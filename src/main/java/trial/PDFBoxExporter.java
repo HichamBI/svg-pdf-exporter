@@ -1,4 +1,9 @@
-package com.hei;
+/**
+ * Author: Hicham B.I.
+ * Date: 08/03/15
+ * Time: 08:52
+ */
+package trial;
 
 import org.apache.batik.gvt.renderer.ImageRenderer;
 import org.apache.batik.transcoder.Transcoder;
@@ -22,7 +27,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 
-public class GraphExporter {
+public class PDFBoxExporter {
 
     PDDocument doIt(String s, String message, String svg) throws IOException, COSVisitorException, TranscoderException {
         PDDocument pdDocument = new PDDocument();

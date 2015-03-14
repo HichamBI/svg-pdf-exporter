@@ -1,4 +1,4 @@
-package com.hei.com.bisam;
+package exporter;
 
 import org.apache.batik.transcoder.TranscoderException;
 

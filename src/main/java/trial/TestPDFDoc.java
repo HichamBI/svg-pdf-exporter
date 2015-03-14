@@ -1,11 +1,9 @@
 /**
- Created by IntelliJ IDEA.
  Author: Hicham B.I.
  Date: 08/03/15
  Time: 10:36
  */
-
-package com.hei;
+package trial;
 
 import com.itextpdf.text.DocumentException;
 import org.apache.batik.transcoder.TranscoderException;

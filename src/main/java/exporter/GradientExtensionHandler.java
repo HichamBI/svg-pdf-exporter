@@ -1,4 +1,4 @@
-package com.hei.com.bisam;
+package exporter;
 
 import org.apache.batik.ext.awt.LinearGradientPaint;
 import org.apache.batik.ext.awt.MultipleGradientPaint;
@@ -116,7 +116,6 @@ class GradientExtensionHandler extends DefaultExtensionHandler {
             if (colors[i].getAlpha() != 255) {
                 stop.setAttribute(SVG_STOP_OPACITY_ATTRIBUTE, pd.getOpacityValue());
             }
-
             grad.appendChild(stop);
         }
     }

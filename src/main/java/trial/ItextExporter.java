@@ -1,4 +1,9 @@
-package com.hei;
+/**
+ * Author: Hicham B.I.
+ * Date: 08/03/15
+ * Time: 08:52
+ */
+package trial;
 
 import com.itextpdf.awt.PdfGraphics2D;
 import com.itextpdf.text.Document;

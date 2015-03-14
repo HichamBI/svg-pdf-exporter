@@ -1,4 +1,9 @@
-package com.hei;
+/**
+ * Author: Hicham B.I.
+ * Date: 08/03/15
+ * Time: 08:52
+ */
+package trial;
 
 import org.apache.batik.ext.awt.LinearGradientPaint;
 import org.apache.batik.ext.awt.MultipleGradientPaint;
@@ -8,7 +13,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import java.awt.*;
-import java.awt.geom.AffineTransform;
 import java.awt.geom.Point2D;
 
 import static org.apache.batik.util.SVGConstants.*;

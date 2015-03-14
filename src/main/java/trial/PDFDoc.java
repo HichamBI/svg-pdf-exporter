@@ -1,4 +1,10 @@
-package com.hei;
+/**
+ * Author: Hicham B.I.
+ * Date: 08/03/15
+ * Time: 08:52
+ */
+
+package trial;
 
 import org.apache.batik.bridge.*;
 import org.apache.batik.dom.GenericDOMImplementation;
@@ -19,12 +25,6 @@ import org.w3c.dom.svg.SVGDocument;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.io.*;
-
-/**
- * Author: Hicham B.I.
- * Date: 08/03/15
- * Time: 08:52
- */
 
 public class PDFDoc {
 
